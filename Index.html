@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- titlebar -->
+        <div id="titlebar">
+            <p id="title">▶ Media Player</p>
+            <Button class="mainbtn" id="minbtn">⚊</Button>
+            <Button class="mainbtn" id="maxbtn">◻</Button>
+            <Button class="mainbtn" id="closebtn">✖</Button>
+        </div>
+        <!-- Main Container -->
+        <div id="MainContainer">
+            <!-- Display Div -->
+            <div id="displayer"></div>
+            <!-- Range -->
+            <!-- <input type="range" name="rn" id="rn" max="100" min="0" value="0" disabled> -->
+            <!-- Controls div -->
+            <div id="controler">
+                <!-- Button -->
+                <Button id="Reset_btn">✖</Button>
+                <Button id="hide_btns">☰</Button>
+                <Button id="Open_file_btn">📖</Button>
+                <Button id="setting_btn">⚙</Button>
+                <Button id="fullscreen_btn">⛶</Button>
+            </div>
+        </div>
+        <!-- Settings window -->
+        <div id="setting_Window">
+            <div id="setting_Window_div">
+                <!-- Close Button -->
+                <div style="display: flex;justify-content: end;">
+                    <button id="close_setting_btn">❌</button>
+                </div>
+                <!-- Play list Head -->
+                <div style="display: flex;align-content: center;align-items: center;">
+                    <h3 style="color: white;font-size: x-large;font-style: italic;padding-left: 1em;">Play List</h3>
+                    <Button id="ADD_BTN">ADD ➕</Button>
+                </div>
+                <!-- Play List -->
+                <div id="PlayList_div"></div>
+            </div>
+        </div>
+        <!-- Display Buttons -->
+        <button id="display_btns">☰</button>
+        <!-- Tool Tip -->
+        <div id="Tool_TIP">Tool Tip</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "media-player",
+  "version": "1.0.0",
+  "description": "This is a Simple Media Player",
+  "main": "App.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^18.2.0"
+  }
+}
