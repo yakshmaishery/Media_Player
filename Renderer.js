@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const Play_Element_FUNC = (n) => {
         FILE_URL = n
         FILE_NAME = path.basename(FILE_URL)
-        if(path.extname(FILE_NAME) == ".mp4"){
+        if(path.extname(FILE_NAME) == ".mp4" || path.extname(FILE_NAME) == ".gif"){
             if(document.getElementById("displayer").hasChildNodes()){
                 document.getElementById("displayer").removeChild(document.getElementById("displayer").children[0])
             }

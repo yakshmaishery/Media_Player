@@ -56,7 +56,7 @@ ipcMain.on("open_File", (e,arr) => {
     dialog.showOpenDialog(root,{
         title:"Open File",
         properties:["openFile"],
-        filters:[{name:"Video",extensions:["mp4"]}]
+        filters:[{name:"Video",extensions:["mp4","gif"]}]
     }).then(choosen => {
         if(choosen.canceled == false){
             e.reply("Open_FILE_Allow",{data:choosen.filePaths})

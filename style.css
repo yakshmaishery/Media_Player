@@ -52,7 +52,7 @@ body{
     height: calc(100vh - 1.6em);
     width: 100%;
     display: grid;
-    grid-template-rows: auto 5em;
+    grid-template-rows: calc(100% - 6.6em ) 5em;
 }
 #displayer{
     background-color: rgb(23,0,47);
@@ -156,4 +156,10 @@ body{
     border-radius: 5px;
     box-shadow: 0px 0px 10px 3px yellow;
     display: none;
+}
+
+#displayer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
